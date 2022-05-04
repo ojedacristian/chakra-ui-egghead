@@ -1,6 +1,6 @@
 import { Heading, Text, VStack, SimpleGrid, GridItem, Box, Divider, AspectRatio, Button, useColorMode, useColorModeValue, HStack, Flex } from '@chakra-ui/react';
 
-const Card = () => {
+const Cart = () => {
 
     const { toggleColorMode } = useColorMode()
     const background = useColorModeValue('gray.100', 'gray.700')
@@ -55,4 +55,4 @@ const Card = () => {
     )
 }
 
-export default Card;
+export default Cart;

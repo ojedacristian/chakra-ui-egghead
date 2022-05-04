@@ -1,5 +1,6 @@
 import { Button, Container, Flex, Heading, Input, useColorMode, useColorModeValue, VStack } from "@chakra-ui/react"
-import Card from "./Card"
+import { m } from "framer-motion"
+import Cart from "./Cart"
 import Details from "./Details"
 
 const IndexPage = () => {
@@ -10,9 +11,17 @@ const IndexPage = () => {
   return (
 
     <Container maxWidth='container.xl' padding={0} border='1px solid black'>
-      <Flex h='100vh' py={20} border='1px solid red'>
-          <Details/>
-          <Card/>
+      <Flex
+        // h='100vh'
+        h={{ base: 'auto', md: '100vh' }}
+        py={[0, 10, 20]} border='1px solid red'
+        direction={{
+          base: 'column-reverse',
+          md: 'row'
+        }}
+      >
+        <Details />
+        <Cart />
       </Flex>
     </Container>
     // LOGIN PAGE
