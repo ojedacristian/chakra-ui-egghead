@@ -1,4 +1,6 @@
 import { Button, Container, Flex, Heading, Input, useColorMode, useColorModeValue, VStack } from "@chakra-ui/react"
+import Card from "./Card"
+import Details from "./Details"
 
 const IndexPage = () => {
 
@@ -9,25 +11,8 @@ const IndexPage = () => {
 
     <Container maxWidth='container.xl' padding={0} border='1px solid black'>
       <Flex h='100vh' py={20} border='1px solid red'>
-        <VStack
-          w='full'
-          h='full'
-          p={10}
-          spacing={10}
-          alignItems='flex-start'
-          bg='red.100'
-        >
-          </VStack>
-          <VStack
-            w='full'
-            h='full'
-            p={10}
-            spacing={10}
-            alignItems='flex-start'
-            bg='gray.200'
-          ></VStack>
-
-
+          <Details/>
+          <Card/>
       </Flex>
     </Container>
     // LOGIN PAGE
